@@ -1,0 +1,15 @@
+http://konect.uni-koblenz.de/networks/radoslaw_email
+
+cat data.csv | grep -vE "^[2-9][0-9][0-9][0-9][0-9]|^1[0-9][0-9][0-9][0-9][0-9]" | grep -vE " [0-9][0-9][0-9][0-9][0-9][0-9] 1 | [5-9][0-9][0-9][0-9][0-9] 1 "  >  data_20k+50k.csv
+
+cat data_20k+50k.csv | grep "Jan-2009" | cut -d " " -f 1,2 | awk '{print $1,$2" 1"}' >  graph/01.txt
+cat data_20k+50k.csv | grep "Fev-2009" | cut -d " " -f 1,2 | awk '{print $1,$2" 1"}' >  graph/02.txt
+cat data_20k+50k.csv | grep "Mar-2009" | cut -d " " -f 1,2 | awk '{print $1,$2" 1"}' >  graph/03.txt
+cat data_20k+50k.csv | grep "Abr-2009" | cut -d " " -f 1,2 | awk '{print $1,$2" 1"}' >  graph/04.txt
+cat data_20k+50k.csv | grep "Mai-2009" | cut -d " " -f 1,2 | awk '{print $1,$2" 1"}' >  graph/05.txt
+cat data_20k+50k.csv | grep "Jun-2009" | cut -d " " -f 1,2 | awk '{print $1,$2" 1"}' >  graph/06.txt
+cat data_20k+50k.csv | grep "Jul-2009" | cut -d " " -f 1,2 | awk '{print $1,$2" 1"}' >  graph/07.txt
+cat data_20k+50k.csv | grep "Ago-2009" | cut -d " " -f 1,2 | awk '{print $1,$2" 1"}' >  graph/08.txt
+cat data_20k+50k.csv | grep "Set-2009" | cut -d " " -f 1,2 | awk '{print $1,$2" 1"}' >  graph/09.txt
+cat data_20k+50k.csv | grep "Out-2009" | cut -d " " -f 1,2 | awk '{print $1,$2" 1"}' >  graph/10.txt
+cat data_20k+50k.csv | grep "Nov-2009" | cut -d " " -f 1,2 | awk '{print $1,$2" 1"}' >  graph/11.txt

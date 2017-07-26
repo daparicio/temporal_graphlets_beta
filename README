@@ -1,0 +1,7 @@
+-s size of the graphlets
+-m type (for this beta use "-m gtrie/mygtrie" and it will use the right gtrie)
+-g graph_dir
+-d directed?
+
+example:
+./gtrieScanner -s 3 -m gtrie gtries/mygtrie -g graphs/crime_minneapolis/graph
